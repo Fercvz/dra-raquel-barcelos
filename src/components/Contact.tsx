@@ -14,9 +14,6 @@ export default function Contact() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
                 >
-                    <span className="inline-block text-sm font-medium text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4">
-                        Contato
-                    </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
                         Estamos prontos para acolher você
                     </h2>
@@ -39,15 +36,6 @@ export default function Contact() {
                     <p className="mt-3 text-sm text-text-muted">
                         {CONTACT.whatsappDisplay}
                     </p>
-
-                    {/* Emergency notice */}
-                    <div className="mt-8 inline-flex items-center gap-2 text-xs text-text-muted bg-cream px-4 py-2.5 rounded-xl">
-                        <AlertTriangle size={14} className="text-amber-500 shrink-0" />
-                        <span>
-                            Em caso de urgência ou emergência, procure atendimento de
-                            emergência.
-                        </span>
-                    </div>
                 </motion.div>
             </div>
         </section>

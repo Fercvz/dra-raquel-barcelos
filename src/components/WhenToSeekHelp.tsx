@@ -8,54 +8,32 @@ const SIGNS = [
     {
         emoji: "🧠",
         title: "Esquecimentos frequentes",
-        highlight:
-            "Esquecimento de informações recentes e eventos importantes",
-        body: "Quando os esquecimentos se repetem e começam a impactar a rotina, pode ser importante investigar.",
-        impact:
-            "Uma avaliação precoce ajuda a diferenciar alterações esperadas do envelhecimento de sinais que merecem acompanhamento.",
+        body: "Quando os esquecimentos se repetem e começam a impactar a rotina, é importante investigar.",
     },
     {
         emoji: "🌙",
         title: "Sono não reparador",
-        highlight:
-            "Acordar muitas vezes à noite e sentir que não descansou",
-        body: "Alterações no sono podem afetar humor, memória, disposição e bem-estar.",
-        impact:
-            "Em idosos, o sono ruim também pode aumentar o risco de quedas e piorar outras condições de saúde.",
+        body: "Acordar muitas vezes à noite e sentir que não descansou, pode ser um alerta. Alterações no sono afetam humor, memória, disposição e bem-estar.",
     },
     {
         emoji: "🍽️",
         title: "Perda de apetite ou peso",
-        highlight: "Perda de apetite ou perda de peso involuntária",
-        body: "Mudanças no apetite e no peso podem ter causas físicas, emocionais ou relacionadas a medicamentos.",
-        impact:
-            "Avaliar cedo ajuda a evitar fraqueza, desnutrição e maior vulnerabilidade.",
+        body: "A perda de apetite ou a perda de peso involuntária podem ter causas físicas, emocionais ou relacionadas a medicamentos.",
     },
     {
         emoji: "💪",
         title: "Fraqueza e cansaço",
-        highlight:
-            "Diminuição da força muscular, fadiga e dores frequentes",
-        body: "Perda de força, cansaço persistente ou dores podem limitar atividades do dia a dia.",
-        impact:
-            "Isso pode comprometer mobilidade, independência e qualidade de vida.",
+        body: "Diminuição da força muscular, fadiga, dores frequentes e cansaço persistente podem dificultar atividades do dia a dia.",
     },
     {
         emoji: "🚶",
         title: "Dificuldade para andar",
-        highlight:
-            "Movimentos lentos, passos arrastados ou insegurança ao caminhar",
-        body: "Alterações na marcha podem surgir de forma gradual e passar despercebidas no início.",
-        impact:
-            "Observar esses sinais é importante para prevenir quedas e preservar autonomia.",
+        body: "Movimentos lentos, passos arrastados ou insegurança ao caminhar. Essas alterações na marcha podem surgir de forma gradual e passar despercebidas no início mas precisam de atenção.",
     },
     {
         emoji: "🧪",
         title: "Alterações em exames",
-        highlight: "Exames com colesterol alto ou outras irregularidades",
-        body: "Resultados alterados nem sempre indicam algo grave, mas precisam ser avaliados no contexto geral da saúde.",
-        impact:
-            "O acompanhamento ajuda a definir prioridades e próximos passos com mais segurança.",
+        body: "Resultados alterados nos exames precisam ser avaliados no contexto geral da saúde.",
     },
 ];
 
@@ -81,9 +59,6 @@ export default function WhenToSeekHelp() {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-2xl mx-auto mb-12"
                 >
-                    <span className="inline-block text-sm font-medium text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4">
-                        Sinais de atenção
-                    </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
                         Quando procurar ajuda?
                     </h2>
@@ -117,22 +92,10 @@ export default function WhenToSeekHelp() {
                                 {sign.title}
                             </h3>
 
-                            {/* Highlight phrase */}
-                            <p className="text-sm font-medium text-blue-700 mb-2 leading-snug">
-                                {sign.highlight}
-                            </p>
-
                             {/* Body */}
                             <p className="text-sm text-text-secondary leading-relaxed mb-3">
                                 {sign.body}
                             </p>
-
-                            {/* Impact */}
-                            <div className="pt-3 border-t border-border/40">
-                                <p className="text-xs text-text-muted leading-relaxed italic">
-                                    {sign.impact}
-                                </p>
-                            </div>
                         </motion.div>
                     ))}
                 </motion.div>

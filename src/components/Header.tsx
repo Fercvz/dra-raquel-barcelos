@@ -35,8 +35,8 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? "bg-blue-700/95 backdrop-blur-md shadow-lg"
-                    : "bg-blue-700"
+                ? "bg-blue-700/95 backdrop-blur-md shadow-lg"
+                : "bg-blue-700"
                 }`}
         >
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -47,9 +47,6 @@ export default function Header() {
                         className="flex items-center gap-3 group"
                         aria-label="Início"
                     >
-                        <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-white font-bold text-sm group-hover:bg-white/30 transition-colors">
-                            RB
-                        </div>
                         <div>
                             <span className="text-sm sm:text-base font-bold text-white leading-tight block">
                                 {DOCTOR.name}

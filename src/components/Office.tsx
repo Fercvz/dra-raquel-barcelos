@@ -16,9 +16,6 @@ export default function Office() {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-2xl mx-auto mb-12"
                 >
-                    <span className="inline-block text-sm font-medium text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4">
-                        Consultório
-                    </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
                         Onde estamos
                     </h2>

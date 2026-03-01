@@ -11,9 +11,6 @@ export default function Footer() {
                     {/* Column 1: Doctor info */}
                     <div>
                         <div className="flex items-center gap-2 mb-3">
-                            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold">
-                                RB
-                            </div>
                             <span className="font-semibold text-white text-sm">
                                 {DOCTOR.name}
                             </span>
@@ -75,18 +72,6 @@ export default function Footer() {
                     <div>
                         <h4 className="text-sm font-semibold text-white mb-3">Links</h4>
                         <div className="space-y-2 text-sm">
-                            <a
-                                href={LINKS.privacyPolicy}
-                                className="block text-white/60 hover:text-white transition-colors"
-                            >
-                                Política de Privacidade
-                            </a>
-                            <a
-                                href={LINKS.termsOfUse}
-                                className="block text-white/60 hover:text-white transition-colors"
-                            >
-                                Termos de Uso
-                            </a>
                             <a
                                 href={OFFICE.mapLinkUrl}
                                 target="_blank"

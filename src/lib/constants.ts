@@ -48,8 +48,7 @@ export function getWhatsAppUrl(message?: string) {
   return `https://wa.me/${CONTACT.whatsappNumber}?text=${msg}`;
 }
 
-// Dados placeholder para o carrossel de vídeos
-// [PLACEHOLDER] — substituir pelos vídeos reais
+// Dados do carrossel de vídeos
 export interface VideoItem {
   id: number;
   order: number;
@@ -58,43 +57,52 @@ export interface VideoItem {
   description: string;
   thumbnailUrl: string;
   videoUrl: string;
+  embedId: string;
 }
 
-export const VIDEOS_PLACEHOLDER: VideoItem[] = [
+export const VIDEOS: VideoItem[] = [
   {
     id: 1,
     order: 1,
     category: "Geriatria",
-    title: "[TÍTULO DO VÍDEO 1]",
-    description: "[Descrição breve do vídeo 1]",
-    thumbnailUrl: "",
-    videoUrl: "#",
+    title: "Cuidado geriátrico: muito além dos exames",
+    description:
+      "Idosos costumam passar por muitos especialistas e exames de rotina. A geriatria olha o paciente de forma integral, indo além dos resultados individuais.",
+    thumbnailUrl: "https://img.youtube.com/vi/f4-irdgu_SM/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/shorts/f4-irdgu_SM",
+    embedId: "f4-irdgu_SM",
   },
   {
     id: 2,
     order: 2,
     category: "Cuidados Paliativos",
-    title: "[TÍTULO DO VÍDEO 2]",
-    description: "[Descrição breve do vídeo 2]",
-    thumbnailUrl: "",
-    videoUrl: "#",
+    title: "A importância da visita domiciliar",
+    description:
+      "Conhecer o ambiente onde o paciente vive permite um cuidado mais completo. A visita domiciliar revela necessidades que o consultório não alcança.",
+    thumbnailUrl: "https://img.youtube.com/vi/oC5_MlCaO3Q/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/shorts/oC5_MlCaO3Q",
+    embedId: "oC5_MlCaO3Q",
   },
   {
     id: 3,
     order: 3,
-    category: "Família",
-    title: "[TÍTULO DO VÍDEO 3]",
-    description: "[Descrição breve do vídeo 3]",
-    thumbnailUrl: "",
-    videoUrl: "#",
+    category: "Cuidados Paliativos",
+    title: "Entendendo a classificação das doenças",
+    description:
+      "Você sabe como as doenças são classificadas? Entender essa divisão ajuda a compreender o caminho do tratamento e do cuidado paliativo.",
+    thumbnailUrl: "https://img.youtube.com/vi/hAMH7WsJbTw/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/shorts/hAMH7WsJbTw",
+    embedId: "hAMH7WsJbTw",
   },
   {
     id: 4,
     order: 4,
-    category: "Envelhecimento",
-    title: "[TÍTULO DO VÍDEO 4]",
-    description: "[Descrição breve do vídeo 4]",
-    thumbnailUrl: "",
-    videoUrl: "#",
+    category: "Cuidados Paliativos",
+    title: "Quando iniciar o cuidado paliativo?",
+    description:
+      "O cuidado paliativo deve começar no diagnóstico de uma doença que ameaça a vida. Sinais como perda de energia e alteração de apetite merecem atenção.",
+    thumbnailUrl: "https://img.youtube.com/vi/zu4Vk0drdXk/maxresdefault.jpg",
+    videoUrl: "https://www.youtube.com/shorts/zu4Vk0drdXk",
+    embedId: "zu4Vk0drdXk",
   },
 ];

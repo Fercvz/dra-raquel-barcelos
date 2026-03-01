@@ -6,9 +6,9 @@ import { ChevronDown } from "lucide-react";
 
 const FAQ_ITEMS = [
     {
-        question: "Cuidados paliativos são apenas para o fim da vida?",
+        question: "Cuidados paliativos são apenas para idosos?",
         answer:
-            "Não. Os cuidados paliativos podem — e devem — ser iniciados muito antes do fim da vida. Eles focam em oferecer conforto, alívio de sintomas e qualidade de vida para pacientes com doenças graves, em qualquer fase. O objetivo é ajudar a pessoa a viver melhor, com dignidade e menos sofrimento.",
+            "Não. Os cuidados paliativos focam em oferecer conforto, alívio de sintomas e qualidade de vida para pacientes com doenças graves, em qualquer fase. O objetivo é ajudar a pessoa a viver melhor, com dignidade e menos sofrimento.",
     },
     {
         question: "A consulta pode ser online?",
@@ -50,15 +50,9 @@ export default function FAQ() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-12"
                 >
-                    <span className="inline-block text-sm font-medium text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4">
-                        Dúvidas frequentes
-                    </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
                         Perguntas frequentes
                     </h2>
-                    <p className="mt-4 text-text-secondary">
-                        Reunimos as dúvidas mais comuns para ajudar você e sua família.
-                    </p>
                 </motion.div>
 
                 {/* Accordion */}

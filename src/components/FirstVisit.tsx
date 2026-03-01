@@ -9,14 +9,14 @@ const STEPS = [
         step: "1",
         title: "Contato pelo WhatsApp",
         description:
-            "Envie uma mensagem pelo WhatsApp. Nossa equipe responderá com agilidade e cuidado.",
+            "Envie uma mensagem pelo WhatsApp. Nossa equipe responderá com agilidade.",
     },
     {
         icon: ClipboardList,
         step: "2",
         title: "Entendimento da necessidade",
         description:
-            "Conversamos brevemente para entender a situação e as principais preocupações da família.",
+            "Conversamos brevemente para entender a situação e as principais preocupações.",
     },
     {
         icon: UserCheck,
@@ -46,9 +46,6 @@ export default function FirstVisit() {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-2xl mx-auto mb-12"
                 >
-                    <span className="inline-block text-sm font-medium text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4">
-                        Primeira consulta
-                    </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
                         Como funciona a primeira consulta?
                     </h2>

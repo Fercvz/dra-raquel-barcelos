@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Heart, Users, Ear, Star, Shield } from "lucide-react";
+import Image from "next/image";
 import { DOCTOR } from "@/lib/constants";
 
 const PILLARS = [
@@ -11,11 +12,6 @@ const PILLARS = [
         text: "Tempo dedicado para ouvir o paciente e a família com cuidado.",
     },
     {
-        icon: Heart,
-        title: "Acolhimento",
-        text: "Um espaço seguro, sem julgamentos, para compartilhar preocupações.",
-    },
-    {
         icon: Star,
         title: "Cuidado individualizado",
         text: "Cada plano é único, pensado para a realidade de cada paciente.",
@@ -23,12 +19,12 @@ const PILLARS = [
     {
         icon: Users,
         title: "Apoio à família",
-        text: "Orientação clara para quem cuida, porque cuidar também exige cuidado.",
+        text: "Orientação clara para toda a família.",
     },
     {
         icon: Shield,
-        title: "Dignidade e qualidade de vida",
-        text: "O foco está em viver bem, com conforto e autonomia em cada fase.",
+        title: "Qualidade de vida",
+        text: "O foco é viver bem, com conforto e autonomia em cada fase da vida.",
     },
 ];
 
@@ -56,9 +52,7 @@ export default function About() {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-2xl mx-auto mb-14"
                 >
-                    <span className="inline-block text-sm font-semibold text-blue-600 bg-blue-100 px-4 py-1.5 rounded-full mb-4">
-                        Sobre a médica
-                    </span>
+
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-text leading-tight">
                         Conheça a{" "}
                         <span className="text-blue-700">{DOCTOR.name}</span>
@@ -78,25 +72,13 @@ export default function About() {
                         <div className="relative w-72 h-80 sm:w-80 sm:h-[380px] lg:w-[340px] lg:h-[420px]">
                             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-blue-200/40 to-rose/40 blur-sm" />
                             <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-blue-100 to-rose overflow-hidden shadow-lg">
-                                {/* [FOTO_MEDICA_PRINCIPAL] — Substituir pelo componente Image com a foto real */}
-                                <div className="absolute inset-0 flex flex-col items-center justify-center text-blue-400">
-                                    <svg
-                                        width="64"
-                                        height="64"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="1.5"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                                        <circle cx="12" cy="7" r="4" />
-                                    </svg>
-                                    <span className="mt-3 text-sm font-medium text-blue-300">
-                                        [FOTO_MEDICA_SOBRE]
-                                    </span>
-                                </div>
+                                <Image
+                                    src="/dra-raquel.jpg"
+                                    alt="Dra. Raquel Barcelos — Geriatra e Paliativista"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 640px) 288px, (max-width: 1024px) 320px, 340px"
+                                />
                             </div>
                         </div>
                     </div>
@@ -106,12 +88,6 @@ export default function About() {
                         <h3 className="text-xl sm:text-2xl font-extrabold text-text mb-1">
                             {DOCTOR.name}
                         </h3>
-                        <p className="text-sm font-semibold text-blue-600 mb-1">
-                            {DOCTOR.specialty}
-                        </p>
-                        <p className="text-xs text-text-muted mb-5">
-                            {DOCTOR.crm} • {DOCTOR.rqeGeriatria} • {DOCTOR.rqePaliativos}
-                        </p>
 
                         <p className="text-base text-text-secondary leading-relaxed mb-4">
                             Formada pela <strong className="text-text">{DOCTOR.university}</strong>,
@@ -121,7 +97,7 @@ export default function About() {
                             <strong className="text-text">mais de 10 anos</strong> cuidando
                             de idosos e suas famílias. É apaixonada pelo que faz e acredita
                             que envelhecer com saúde, dignidade e qualidade de vida é
-                            primordial — e possível, quando se tem o acompanhamento certo.
+                            primordial e possível, quando se tem o acompanhamento certo.
                         </p>
 
                         <p className="text-base text-text-secondary leading-relaxed mb-4">
@@ -131,16 +107,10 @@ export default function About() {
                             permite enxergar o contexto real de vida, entender as
                             necessidades da família e oferecer orientações que realmente
                             fazem diferença no dia a dia. Para ela, cada paciente tem uma
-                            história única — e o plano de cuidado precisa respeitar essa
+                            história única e o plano de cuidado precisa respeitar essa
                             individualidade.
                         </p>
 
-                        <blockquote className="border-l-4 border-blue-300 pl-4 py-2 italic text-base text-text-secondary leading-relaxed">
-                            &ldquo;Cada passo nesse processo é sobre garantir dignidade,
-                            qualidade de vida e superar obstáculos. Porque, mesmo entre os
-                            desafios, ainda podemos encontrar beleza e humanidade em cada
-                            fase.&rdquo;
-                        </blockquote>
                     </div>
                 </motion.div>
 

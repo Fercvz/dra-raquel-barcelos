@@ -12,17 +12,17 @@ const CARE_CARDS = [
     {
         icon: Activity,
         title: "Estilo de vida saudável",
-        text: "Mesmo na fase adulta e no envelhecimento, hábitos adequados de alimentação, sono e atividade física fazem diferença significativa no dia a dia.",
+        text: "Mesmo na fase adulta, hábitos adequados de alimentação, sono e atividade física fazem diferença significativa no dia a dia.",
     },
     {
         icon: ShieldCheck,
         title: "Autonomia e independência",
-        text: "Cuidar da saúde de forma preventiva ajuda a manter a independência e a capacidade de tomar decisões sobre a própria vida por mais tempo.",
+        text: "Prevenir é fortalecer a autonomia, para você viver com mais liberdade e segurança.",
     },
     {
         icon: Leaf,
         title: "Cuidado contínuo",
-        text: "O envelhecimento é um processo — e o cuidado precisa acompanhar esse ritmo, com reavaliações regulares e ajustes no plano de saúde.",
+        text: "O envelhecimento é um processo natural e o cuidado precisa acompanhar esse ritmo, com reavaliações regulares e ajustes no plano de saúde.",
     },
 ];
 
@@ -37,12 +37,8 @@ export default function HealthyCare() {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-2xl mx-auto mb-12"
                 >
-                    <span className="inline-block text-sm font-medium text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4">
-                        Envelhecimento saudável
-                    </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
-                        Cuidar da saúde na fase adulta é um gesto de amor por si mesmo e
-                        pela família
+                        Cuidar da saúde é um ato de amor por você e por sua família
                     </h2>
                     <p className="mt-4 text-text-secondary">
                         O acompanhamento preventivo é um dos maiores cuidados que alguém

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MessageCircle, ChevronDown } from "lucide-react";
+import Image from "next/image";
 import { DOCTOR, getWhatsAppUrl } from "@/lib/constants";
 
 export default function Hero() {
@@ -31,19 +32,11 @@ export default function Hero() {
                         </h1>
 
                         <p className="mt-5 text-base sm:text-lg text-text-secondary leading-relaxed max-w-xl mx-auto lg:mx-0">
-                            Atendimento em geriatria e cuidados paliativos para idosos e suas
-                            famílias, com escuta atenta, orientação clara e um plano de
-                            cuidado individualizado.
+                            Atendimento em geriatria e cuidados paliativos com escuta atenta, orientações claras e um plano de cuidado feito para você e seus familiares.
                         </p>
 
                         {/* Credentials */}
-                        <div className="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-1 text-xs text-text-muted">
-                            <span>{DOCTOR.crm}</span>
-                            <span className="hidden sm:inline">•</span>
-                            <span>{DOCTOR.rqeGeriatria}</span>
-                            <span className="hidden sm:inline">•</span>
-                            <span>{DOCTOR.rqePaliativos}</span>
-                        </div>
+
 
                         {/* CTAs */}
                         <div className="mt-8 flex flex-col sm:flex-row items-center gap-3 justify-center lg:justify-start">
@@ -76,25 +69,14 @@ export default function Hero() {
                             {/* Decorative rings */}
                             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-blue-200/40 to-rose/40 blur-sm" />
                             <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-blue-100 to-rose overflow-hidden shadow-lg">
-                                {/* [FOTO_MEDICA_PRINCIPAL] — Substituir pelo componente Image com a foto real */}
-                                <div className="absolute inset-0 flex flex-col items-center justify-center text-blue-400">
-                                    <svg
-                                        width="64"
-                                        height="64"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="1.5"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                                        <circle cx="12" cy="7" r="4" />
-                                    </svg>
-                                    <span className="mt-3 text-sm font-medium text-blue-300">
-                                        [FOTO_MEDICA_PRINCIPAL]
-                                    </span>
-                                </div>
+                                <Image
+                                    src="/dra-raquel.jpg"
+                                    alt="Dra. Raquel Barcelos — Geriatra e Paliativista"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                    sizes="(max-width: 640px) 256px, (max-width: 1024px) 320px, 360px"
+                                />
                             </div>
                         </div>
                     </motion.div>

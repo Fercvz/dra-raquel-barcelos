@@ -29,7 +29,7 @@ const SERVICES = [
         forWhom:
             "Para pacientes e famílias que enfrentam doenças graves e precisam de suporte integral.",
         howHelps:
-            "Promove conforto, dignidade e menos sofrimento — para o paciente e para quem cuida. Cuidados paliativos são muito mais do que o fim da vida: são sobre viver melhor.",
+            "Promove conforto, dignidade e menos sofrimento para o paciente e para quem cuida. Cuidados paliativos são muito mais do que o fim da vida: são sobre viver melhor.",
     },
     {
         icon: Building2,
@@ -75,15 +75,11 @@ export default function Services() {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-2xl mx-auto mb-12"
                 >
-                    <span className="inline-block text-sm font-medium text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full mb-4">
-                        Atendimentos
-                    </span>
                     <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
-                        Cada pessoa é única — e o cuidado também precisa ser
+                        Conheça as formas de atendimento disponíveis
                     </h2>
                     <p className="mt-4 text-text-secondary">
-                        Conheça as formas de atendimento disponíveis. O mais importante é
-                        encontrar a melhor opção para o paciente e sua família.
+                        Cada pessoa é única e o cuidado também precisa ser.
                     </p>
                 </motion.div>
 
@@ -104,9 +100,7 @@ export default function Services() {
                                 Apoio à família e cuidadores
                             </h3>
                             <p className="text-sm text-text-secondary leading-relaxed">
-                                Em todos os atendimentos, a família é parte essencial do
-                                cuidado. Oferecemos orientação clara, escuta atenta e suporte
-                                para quem cuida — porque cuidar também exige cuidado.
+                                Em todos os atendimentos, a família é parte essencial do cuidado. Oferecemos escuta e suporte, pois acreditamos que quem cuida também merece ser cuidado.
                             </p>
                         </div>
                     </div>
@@ -147,16 +141,6 @@ export default function Services() {
                                     {service.howHelps}
                                 </p>
                             </div>
-
-                            <a
-                                href={getWhatsAppUrl()}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="mt-4 inline-flex items-center justify-center gap-2 w-full py-2.5 text-sm font-medium text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors"
-                            >
-                                <MessageCircle size={16} />
-                                Agendar pelo WhatsApp
-                            </a>
                         </motion.div>
                     ))}
                 </div>
