@@ -49,7 +49,7 @@ const cardVariants = {
 
 export default function WhenToSeekHelp() {
     return (
-        <section id="sinais" className="py-16 sm:py-24 bg-lavender">
+        <section id="sinais" className="py-16 sm:py-24 bg-white">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* Heading */}
                 <motion.div
@@ -57,12 +57,12 @@ export default function WhenToSeekHelp() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-2xl mx-auto mb-12"
+                    className="text-center mx-auto mb-12"
                 >
-                    <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Quando procurar ajuda?
                     </h2>
-                    <p className="mt-4 text-text-secondary">
+                    <p className="mt-4 text-lg text-text-secondary">
                         Alguns sinais podem ser sutis, mas merecem atenção. Reconhecê-los é
                         o primeiro passo para cuidar melhor de quem você ama.
                     </p>
@@ -80,7 +80,7 @@ export default function WhenToSeekHelp() {
                         <motion.div
                             key={sign.title}
                             variants={cardVariants}
-                            className="bg-cream rounded-2xl p-6 border border-border/40 hover:shadow-lg hover:border-blue-200 transition-all duration-300 group"
+                            className="bg-[#F7E9E1] rounded-2xl p-6 border-2 border-border hover:shadow-lg hover:border-[#C4AB9D] transition-all duration-300 group"
                         >
                             {/* Emoji */}
                             <span className="text-3xl mb-3 block" role="img" aria-hidden="true">
@@ -88,12 +88,12 @@ export default function WhenToSeekHelp() {
                             </span>
 
                             {/* Title */}
-                            <h3 className="text-base font-bold text-text mb-2 group-hover:text-blue-700 transition-colors">
+                            <h3 className="text-xl font-bold text-text mb-2 group-hover:text-[#5E483E] transition-colors">
                                 {sign.title}
                             </h3>
 
                             {/* Body */}
-                            <p className="text-sm text-text-secondary leading-relaxed mb-3">
+                            <p className="text-lg text-text-secondary leading-relaxed mb-3">
                                 {sign.body}
                             </p>
                         </motion.div>
@@ -117,7 +117,7 @@ export default function WhenToSeekHelp() {
                         href={getWhatsAppUrl()}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-7 py-3.5 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                        className="inline-flex items-center gap-2 px-7 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                     >
                         <MessageCircle size={18} />
                         Falar no WhatsApp

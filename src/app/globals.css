@@ -6,29 +6,29 @@
    ============================================ */
 
 @theme inline {
-  --color-cream: #FDF8F4;
-  --color-cream-dark: #F7F0E8;
-  --color-rose: #F5E6E0;
-  --color-rose-dark: #E8D4CC;
-  --color-lavender: #F0EBF8;
-  --color-mint: #EDF5F0;
-  --color-peach: #FDF0EC;
-  --color-sky: #EDF6FC;
-  --color-blue-50: #EEF4FB;
-  --color-blue-100: #E0ECF8;
-  --color-blue-200: #C4DAF0;
-  --color-blue-300: #9EC2E5;
-  --color-blue-400: #6FA8D9;
-  --color-blue-500: #5B9BD5;
-  --color-blue-600: #3D7EBF;
-  --color-blue-700: #2E6BA6;
-  --color-blue-800: #1E4D7A;
-  --color-text: #2D3436;
-  --color-text-secondary: #636E72;
-  --color-text-muted: #95A5A6;
+  --color-cream: #F7E9E1;
+  --color-cream-dark: #EEDDD3;
+  --color-rose: #F7E9E1;
+  --color-rose-dark: #EEDDD3;
+  --color-lavender: #F7E9E1;
+  --color-mint: #F7E9E1;
+  --color-peach: #F7E9E1;
+  --color-sky: #FFFFFF;
+  --color-blue-50: #FFFFFF;
+  --color-blue-100: #F7E9E1;
+  --color-blue-200: #EEDDD3;
+  --color-blue-300: #D9C4B8;
+  --color-blue-400: #C4AB9D;
+  --color-blue-500: #9A7D6D;
+  --color-blue-600: #7D6356;
+  --color-blue-700: #5E483E;
+  --color-blue-800: #4A3830;
+  --color-text: #1F2224;
+  --color-text-secondary: #3D4548;
+  --color-text-muted: #6B7578;
   --color-whatsapp: #25D366;
   --color-whatsapp-dark: #1DA851;
-  --color-border: #E8E0D8;
+  --color-border: #C4AB9D;
   --color-white: #FFFFFF;
 
   --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
@@ -44,6 +44,7 @@ body {
   background: var(--color-cream);
   color: var(--color-text);
   font-family: var(--font-sans);
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.7;

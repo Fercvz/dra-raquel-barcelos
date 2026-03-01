@@ -73,12 +73,12 @@ export default function Services() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-2xl mx-auto mb-12"
+                    className="text-center max-w-3xl mx-auto mb-12"
                 >
-                    <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Conheça as formas de atendimento disponíveis
                     </h2>
-                    <p className="mt-4 text-text-secondary">
+                    <p className="mt-4 text-x1 text-text-secondary">
                         Cada pessoa é única e o cuidado também precisa ser.
                     </p>
                 </motion.div>
@@ -89,17 +89,17 @@ export default function Services() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="bg-blue-50 rounded-2xl p-6 sm:p-8 mb-10 border border-blue-100"
+                    className="bg-white rounded-2xl p-6 sm:p-8 mb-10 border-2 border-border"
                 >
                     <div className="flex flex-col sm:flex-row items-start gap-4">
-                        <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+                        <div className="w-10 h-10 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] shrink-0">
                             <HeartHandshake size={22} />
                         </div>
                         <div>
                             <h3 className="text-base font-semibold text-text mb-1">
                                 Apoio à família e cuidadores
                             </h3>
-                            <p className="text-sm text-text-secondary leading-relaxed">
+                            <p className="text-base text-text-secondary leading-relaxed">
                                 Em todos os atendimentos, a família é parte essencial do cuidado. Oferecemos escuta e suporte, pois acreditamos que quem cuida também merece ser cuidado.
                             </p>
                         </div>
@@ -115,26 +115,26 @@ export default function Services() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-40px" }}
                             transition={{ duration: 0.5, delay: i * 0.08 }}
-                            className="bg-cream rounded-2xl p-6 border border-border/40 hover:shadow-lg hover:border-blue-200 transition-all duration-300 flex flex-col group"
+                            className="bg-white rounded-2xl p-6 border-2 border-border hover:shadow-lg hover:border-[#C4AB9D] transition-all duration-300 flex flex-col group"
                         >
-                            <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 mb-4 group-hover:bg-blue-100 transition-colors">
+                            <div className="w-11 h-11 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] mb-4 group-hover:bg-[#EEDDD3] transition-colors">
                                 <service.icon size={22} />
                             </div>
 
-                            <h3 className="text-lg font-semibold text-text mb-2">
+                            <h3 className="text-2xl font-semibold text-text mb-2">
                                 {service.title}
                             </h3>
 
-                            <p className="text-sm text-text-secondary leading-relaxed mb-3">
+                            <p className="text-lg text-text-secondary leading-relaxed mb-3">
                                 {service.description}
                             </p>
 
                             <div className="mt-auto pt-4 border-t border-border/40 space-y-2">
-                                <p className="text-xs text-text-muted">
+                                <p className="text-base text-text-muted">
                                     <strong className="text-text-secondary">Para quem:</strong>{" "}
                                     {service.forWhom}
                                 </p>
-                                <p className="text-xs text-text-muted">
+                                <p className="text-sm text-text-muted">
                                     <strong className="text-text-secondary">
                                         Como pode ajudar:
                                     </strong>{" "}

@@ -36,7 +36,7 @@ const STEPS = [
 
 export default function FirstVisit() {
     return (
-        <section className="py-16 sm:py-24 bg-mint">
+        <section className="py-16 sm:py-24 bg-white">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* Heading */}
                 <motion.div
@@ -44,12 +44,12 @@ export default function FirstVisit() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-2xl mx-auto mb-12"
+                    className="text-center mx-auto mb-12"
                 >
-                    <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Como funciona a primeira consulta?
                     </h2>
-                    <p className="mt-4 text-text-secondary">
+                    <p className="mt-4 text-lg text-text-secondary">
                         O primeiro passo pode parecer difícil, mas é mais simples do que
                         você imagina. Estamos aqui para acolher.
                     </p>
@@ -58,7 +58,7 @@ export default function FirstVisit() {
                 {/* Timeline */}
                 <div className="relative">
                     {/* Connector line (desktop) */}
-                    <div className="hidden lg:block absolute top-16 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-0.5 bg-blue-100" />
+                    <div className="hidden lg:block absolute top-16 left-[calc(12.5%+20px)] right-[calc(12.5%+20px)] h-0.5 bg-[#EEDDD3]" />
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
                         {STEPS.map((step, i) => (
@@ -71,20 +71,20 @@ export default function FirstVisit() {
                                 className="relative text-center lg:text-center"
                             >
                                 {/* Step circle */}
-                                <div className="relative z-10 w-14 h-14 mx-auto rounded-2xl bg-blue-50 border-2 border-blue-200 flex items-center justify-center text-blue-600 mb-4">
+                                <div className="relative z-10 w-14 h-14 mx-auto rounded-2xl bg-[#F7E9E1] border-2 border-[#D9C4B8] flex items-center justify-center text-[#9A7D6D] mb-4">
                                     <step.icon size={24} />
                                 </div>
 
                                 {/* Step number */}
-                                <span className="inline-block text-xs font-bold text-blue-500 bg-blue-50 px-2.5 py-0.5 rounded-full mb-2">
+                                <span className="inline-block text-xs font-bold text-[#7D6356] bg-[#F7E9E1] px-2.5 py-0.5 rounded-full mb-2">
                                     Passo {step.step}
                                 </span>
 
-                                <h3 className="text-base font-semibold text-text mb-2">
+                                <h3 className="text-lg font-semibold text-text mb-2">
                                     {step.title}
                                 </h3>
 
-                                <p className="text-sm text-text-secondary leading-relaxed max-w-xs mx-auto">
+                                <p className="text-base text-text-secondary leading-relaxed max-w-xs mx-auto">
                                     {step.description}
                                 </p>
                             </motion.div>

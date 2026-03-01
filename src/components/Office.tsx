@@ -14,12 +14,12 @@ export default function Office() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-2xl mx-auto mb-12"
+                    className="text-center mx-auto mb-12"
                 >
-                    <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Onde estamos
                     </h2>
-                    <p className="mt-4 text-text-secondary">
+                    <p className="mt-4 text-lg text-text-secondary">
                         Consultório localizado em{" "}
                         <strong className="text-text">{OFFICE.city}-{OFFICE.state}</strong>,
                         em ambiente acolhedor e acessível.
@@ -33,17 +33,17 @@ export default function Office() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="bg-cream rounded-2xl p-6 sm:p-8 border border-border/40 space-y-5"
+                        className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-border space-y-5"
                     >
                         <div className="flex items-start gap-4">
-                            <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 shrink-0">
+                            <div className="w-10 h-10 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] shrink-0">
                                 <MapPin size={20} />
                             </div>
                             <div>
-                                <h3 className="text-sm font-semibold text-text mb-1">
+                                <h3 className="text-base font-semibold text-text mb-1">
                                     Endereço
                                 </h3>
-                                <p className="text-sm text-text-secondary">
+                                <p className="text-base text-text-secondary">
                                     {OFFICE.address}
                                     <br />
                                     {OFFICE.neighborhood}, {OFFICE.city} - {OFFICE.state}
@@ -54,26 +54,26 @@ export default function Office() {
                         </div>
 
                         <div className="flex items-start gap-4">
-                            <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 shrink-0">
+                            <div className="w-10 h-10 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] shrink-0">
                                 <Phone size={20} />
                             </div>
                             <div>
-                                <h3 className="text-sm font-semibold text-text mb-1">
+                                <h3 className="text-base font-semibold text-text mb-1">
                                     Telefone
                                 </h3>
-                                <p className="text-sm text-text-secondary">{CONTACT.phone}</p>
+                                <p className="text-base text-text-secondary">{CONTACT.phone}</p>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-4">
-                            <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 shrink-0">
+                            <div className="w-10 h-10 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] shrink-0">
                                 <Clock size={20} />
                             </div>
                             <div>
-                                <h3 className="text-sm font-semibold text-text mb-1">
+                                <h3 className="text-base font-semibold text-text mb-1">
                                     Horário de funcionamento
                                 </h3>
-                                <p className="text-sm text-text-secondary">{OFFICE.hours}</p>
+                                <p className="text-base text-text-secondary">{OFFICE.hours}</p>
                             </div>
                         </div>
 
@@ -81,7 +81,7 @@ export default function Office() {
                             href={OFFICE.mapLinkUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-50 text-blue-700 text-sm font-medium rounded-xl hover:bg-blue-100 transition-colors"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#F7E9E1] text-text text-base font-medium rounded-xl hover:bg-[#EEDDD3] transition-colors border border-border"
                         >
                             <ExternalLink size={16} />
                             Abrir no mapa

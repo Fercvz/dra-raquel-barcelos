@@ -40,7 +40,7 @@ export default function FAQ() {
     };
 
     return (
-        <section className="py-16 sm:py-24 bg-rose">
+        <section className="py-16 sm:py-24 bg-white">
             <div className="max-w-3xl mx-auto px-4 sm:px-6">
                 {/* Heading */}
                 <motion.div
@@ -50,7 +50,7 @@ export default function FAQ() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Perguntas frequentes
                     </h2>
                 </motion.div>
@@ -65,8 +65,8 @@ export default function FAQ() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.06 }}
                             className={`rounded-2xl border transition-colors duration-200 ${openIndex === index
-                                ? "border-blue-200 bg-blue-50/30"
-                                : "border-border/40 bg-cream"
+                                ? "border-[#D9C4B8] bg-white/30"
+                                : "border-border bg-cream"
                                 }`}
                         >
                             <button
@@ -74,7 +74,7 @@ export default function FAQ() {
                                 className="w-full flex items-center justify-between gap-4 p-5 text-left cursor-pointer"
                                 aria-expanded={openIndex === index}
                             >
-                                <span className="text-sm sm:text-base font-semibold text-text">
+                                <span className="text-base sm:text-lg font-semibold text-text">
                                     {item.question}
                                 </span>
                                 <ChevronDown
@@ -88,7 +88,7 @@ export default function FAQ() {
                             >
                                 <div>
                                     <div className="px-5 pb-5">
-                                        <p className="text-sm text-text-secondary leading-relaxed">
+                                        <p className="text-base text-text-secondary leading-relaxed">
                                             {item.answer}
                                         </p>
                                     </div>

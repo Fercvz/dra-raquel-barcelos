@@ -13,7 +13,7 @@ export default function Hero() {
         >
             {/* Subtle background decoration */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-3xl" />
+                <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-[#F7E9E1]/60 rounded-full blur-3xl" />
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose/30 rounded-full blur-3xl" />
             </div>
 
@@ -26,7 +26,7 @@ export default function Hero() {
                         transition={{ duration: 0.7, ease: "easeOut" }}
                         className="text-center lg:text-left order-2 lg:order-1"
                     >
-                        <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold text-text leading-tight tracking-tight">
+                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text leading-tight tracking-tight">
                             Cuidar de quem você ama com mais segurança, acolhimento e
                             qualidade de vida.
                         </h1>
@@ -44,14 +44,14 @@ export default function Hero() {
                                 href={getWhatsAppUrl()}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white font-bold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                             >
                                 <MessageCircle size={18} />
                                 Falar no WhatsApp
                             </a>
                             <a
                                 href="#atendimentos"
-                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-blue-200 text-blue-700 font-semibold rounded-full hover:bg-blue-50 transition-all duration-200"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#DFD0C4] hover:bg-[#D5C4B6] text-text font-semibold rounded-full border-2 border-[#C4AB9D] transition-all duration-200"
                             >
                                 Conheça os atendimentos
                             </a>
@@ -65,10 +65,10 @@ export default function Hero() {
                         transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                         className="order-1 lg:order-2 flex justify-center"
                     >
-                        <div className="relative w-64 h-72 sm:w-80 sm:h-96 lg:w-[360px] lg:h-[440px]">
+                        <div className="relative w-80 h-[360px] sm:w-[420px] sm:h-[500px] lg:w-[480px] lg:h-[560px]">
                             {/* Decorative rings */}
-                            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-blue-200/40 to-rose/40 blur-sm" />
-                            <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-blue-100 to-rose overflow-hidden shadow-lg">
+                            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-[#EEDDD3]/40 to-rose/40 blur-sm" />
+                            <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-[#F7E9E1] to-rose overflow-hidden shadow-lg">
                                 <Image
                                     src="/dra-raquel.jpg"
                                     alt="Dra. Raquel Barcelos — Geriatra e Paliativista"
@@ -91,7 +91,7 @@ export default function Hero() {
                 >
                     <a
                         href="#sobre"
-                        className="text-text-muted hover:text-blue-500 transition-colors animate-bounce"
+                        className="text-text-muted hover:text-text transition-colors animate-bounce"
                         aria-label="Rolar para próxima seção"
                     >
                         <ChevronDown size={24} />

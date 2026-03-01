@@ -10,7 +10,7 @@ export default function MobileCTA() {
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-xl transition-colors shadow-sm"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold rounded-xl transition-colors shadow-sm"
             >
                 <MessageCircle size={18} />
                 Falar no WhatsApp

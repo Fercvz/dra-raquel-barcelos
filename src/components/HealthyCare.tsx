@@ -35,12 +35,12 @@ export default function HealthyCare() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-2xl mx-auto mb-12"
+                    className="text-center mx-auto mb-12"
                 >
-                    <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Cuidar da saúde é um ato de amor por você e por sua família
                     </h2>
-                    <p className="mt-4 text-text-secondary">
+                    <p className="mt-4 text-x1 text-text-secondary">
                         O acompanhamento preventivo é um dos maiores cuidados que alguém
                         pode ter. Entenda por que ele faz tanta diferença.
                     </p>
@@ -54,15 +54,15 @@ export default function HealthyCare() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-60px" }}
                             transition={{ duration: 0.5, delay: i * 0.1 }}
-                            className="bg-cream rounded-2xl p-6 sm:p-8 border border-border/50 hover:shadow-lg transition-all duration-300 group"
+                            className="bg-white rounded-2xl p-6 sm:p-8 border-2 border-border hover:shadow-lg transition-all duration-300 group"
                         >
-                            <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 mb-4 group-hover:bg-blue-100 transition-colors">
+                            <div className="w-12 h-12 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] mb-4 group-hover:bg-[#EEDDD3] transition-colors">
                                 <card.icon size={24} />
                             </div>
-                            <h3 className="text-lg font-semibold text-text mb-2">
+                            <h3 className="text-2xl font-semibold text-text mb-2">
                                 {card.title}
                             </h3>
-                            <p className="text-sm text-text-secondary leading-relaxed">
+                            <p className="text-lg text-text-secondary leading-relaxed">
                                 {card.text}
                             </p>
                         </motion.div>

@@ -35,11 +35,11 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                ? "bg-blue-700/95 backdrop-blur-md shadow-lg"
-                : "bg-blue-700"
+                ? "bg-[#DFD0C4]/95 backdrop-blur-md shadow-lg"
+                : "bg-[#DFD0C4]"
                 }`}
         >
-            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex items-center justify-between h-18 sm:h-20">
                     {/* Logo + Name + CRM */}
                     <a
@@ -48,13 +48,13 @@ export default function Header() {
                         aria-label="Início"
                     >
                         <div>
-                            <span className="text-sm sm:text-base font-bold text-white leading-tight block">
+                            <span className="text-lg sm:text-xl font-extrabold text-text leading-tight block">
                                 {DOCTOR.name}
                             </span>
-                            <span className="text-[10px] sm:text-[11px] text-blue-100 leading-tight block">
+                            <span className="text-xs sm:text-sm text-text-secondary leading-tight block">
                                 {DOCTOR.specialty} • {DOCTOR.crm}
                             </span>
-                            <span className="hidden sm:block text-[9px] text-blue-200/70 leading-tight">
+                            <span className="hidden sm:block text-[11px] sm:text-xs text-text-muted leading-tight">
                                 {DOCTOR.rqeGeriatria} • {DOCTOR.rqePaliativos}
                             </span>
                         </div>
@@ -66,7 +66,7 @@ export default function Header() {
                             <a
                                 key={item.href}
                                 href={item.href}
-                                className="px-3 py-2 text-sm text-blue-100 hover:text-white transition-colors rounded-lg hover:bg-white/10"
+                                className="px-3 py-2 text-base font-medium text-text-secondary hover:text-text transition-colors rounded-lg hover:bg-white/50"
                             >
                                 {item.label}
                             </a>
@@ -75,7 +75,7 @@ export default function Header() {
                             href={CONTACT.instagram}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ml-1 p-2.5 text-blue-100 hover:text-pink-300 transition-colors rounded-lg hover:bg-white/10"
+                            className="ml-1 p-2.5 text-text-secondary hover:text-pink-500 transition-colors rounded-lg hover:bg-white/50"
                             aria-label="Instagram"
                         >
                             <Instagram size={22} />
@@ -84,7 +84,7 @@ export default function Header() {
                             href={getWhatsAppUrl()}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-blue-50 text-blue-700 text-sm font-bold rounded-full transition-colors shadow-sm"
+                            className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 bg-whatsapp hover:bg-whatsapp-dark text-white text-sm font-bold rounded-full transition-colors shadow-sm"
                         >
                             <MessageCircle size={16} />
                             WhatsApp
@@ -93,7 +93,7 @@ export default function Header() {
 
                     {/* Mobile Hamburger */}
                     <button
-                        className="lg:hidden p-2 text-white rounded-lg hover:bg-white/10 transition-colors"
+                        className="lg:hidden p-2 text-text rounded-lg hover:bg-white/50 transition-colors"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
                         aria-expanded={isOpen}
@@ -115,7 +115,7 @@ export default function Header() {
                     >
                         <nav className="flex flex-col p-6 gap-1" aria-label="Menu mobile">
                             {/* CRM/RQE on mobile */}
-                            <div className="mb-3 px-4 py-2 bg-blue-50 rounded-xl text-xs text-blue-600">
+                            <div className="mb-3 px-4 py-2 bg-[#F7E9E1] rounded-xl text-xs text-text-secondary">
                                 <p className="font-semibold">{DOCTOR.crm}</p>
                                 <p>{DOCTOR.rqeGeriatria} • {DOCTOR.rqePaliativos}</p>
                             </div>
@@ -127,7 +127,7 @@ export default function Header() {
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: i * 0.05 }}
-                                    className="py-3 px-4 text-lg text-text hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-colors"
+                                    className="py-3 px-4 text-lg text-text hover:text-[#5E483E] hover:bg-[#F7E9E1] rounded-xl transition-colors"
                                 >
                                     {item.label}
                                 </motion.a>
@@ -148,7 +148,7 @@ export default function Header() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={closeMenu}
-                                className="mt-3 flex items-center justify-center gap-2 py-3.5 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-2xl transition-colors shadow-sm"
+                                className="mt-3 flex items-center justify-center gap-2 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white font-bold rounded-2xl transition-colors shadow-sm"
                             >
                                 <MessageCircle size={18} />
                                 Falar no WhatsApp

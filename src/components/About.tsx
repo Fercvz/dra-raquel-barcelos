@@ -42,7 +42,7 @@ const cardVariants = {
 
 export default function About() {
     return (
-        <section id="sobre" className="py-16 sm:py-24 bg-sky">
+        <section id="sobre" className="py-16 sm:py-24 bg-white">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* Section heading */}
                 <motion.div
@@ -50,12 +50,12 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-2xl mx-auto mb-14"
+                    className="text-center mx-auto mb-14"
                 >
 
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-text leading-tight">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text leading-tight lg:whitespace-nowrap">
                         Conheça a{" "}
-                        <span className="text-blue-700">{DOCTOR.name}</span>
+                        <span className="text-text">{DOCTOR.name}</span>
                     </h2>
                 </motion.div>
 
@@ -69,9 +69,9 @@ export default function About() {
                 >
                     {/* Doctor Photo */}
                     <div className="flex justify-center">
-                        <div className="relative w-72 h-80 sm:w-80 sm:h-[380px] lg:w-[340px] lg:h-[420px]">
-                            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-blue-200/40 to-rose/40 blur-sm" />
-                            <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-blue-100 to-rose overflow-hidden shadow-lg">
+                        <div className="relative w-80 h-[380px] sm:w-[400px] sm:h-[480px] lg:w-[440px] lg:h-[520px]">
+                            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-[#EEDDD3]/40 to-rose/40 blur-sm" />
+                            <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-[#F7E9E1] to-rose overflow-hidden shadow-lg">
                                 <Image
                                     src="/dra-raquel-sobre.jpg"
                                     alt="Dra. Raquel Barcelos — Geriatra e Paliativista"
@@ -85,11 +85,14 @@ export default function About() {
 
                     {/* Text Content */}
                     <div>
-                        <h3 className="text-xl sm:text-2xl font-extrabold text-text mb-1">
+                        <h3 className="text-2xl sm:text-3xl font-extrabold text-text mb-1">
                             {DOCTOR.name}
                         </h3>
+                        <p className="text-base text-text-secondary mb-4">
+                            {DOCTOR.crm}    |    {DOCTOR.rqeGeriatria}    |    {DOCTOR.rqePaliativos}
+                        </p>
 
-                        <p className="text-base text-text-secondary leading-relaxed mb-4">
+                        <p className="text-lg text-text-secondary leading-relaxed mb-4 text-justify">
                             Formada pela <strong className="text-text">{DOCTOR.university}</strong>,
                             com residência em geriatria e cuidados paliativos pela{" "}
                             <strong className="text-text">{DOCTOR.residency.split(" — ")[0]}</strong>,
@@ -100,7 +103,7 @@ export default function About() {
                             primordial e possível, quando se tem o acompanhamento certo.
                         </p>
 
-                        <p className="text-base text-text-secondary leading-relaxed mb-4">
+                        <p className="text-lg text-text-secondary leading-relaxed mb-4 text-justify">
                             Além do consultório, a Dra. Raquel realiza{" "}
                             <strong className="text-text">atendimento domiciliar</strong>,
                             levando o cuidado até a casa do paciente. Essa proximidade
@@ -120,21 +123,21 @@ export default function About() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, margin: "-80px" }}
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
                 >
                     {PILLARS.map((pillar) => (
                         <motion.div
                             key={pillar.title}
                             variants={cardVariants}
-                            className="bg-cream rounded-2xl p-5 text-center hover:shadow-md transition-shadow duration-300"
+                            className="bg-[#F7E9E1] rounded-2xl p-5 text-center hover:shadow-md transition-shadow duration-300 border border-border"
                         >
-                            <div className="w-11 h-11 mx-auto rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 mb-3">
+                            <div className="w-11 h-11 mx-auto rounded-xl bg-white flex items-center justify-center text-[#9A7D6D] mb-3">
                                 <pillar.icon size={22} />
                             </div>
-                            <h3 className="text-sm font-bold text-text mb-1">
+                            <h3 className="text-xl font-bold text-text mb-1">
                                 {pillar.title}
                             </h3>
-                            <p className="text-xs text-text-secondary leading-relaxed">
+                            <p className="text-base text-text-secondary leading-relaxed">
                                 {pillar.text}
                             </p>
                         </motion.div>
