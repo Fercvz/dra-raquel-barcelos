@@ -35,12 +35,12 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                ? "bg-[#DFD0C4]/95 backdrop-blur-md shadow-lg"
-                : "bg-[#DFD0C4]"
+                ? "bg-[#5E483E]/95 backdrop-blur-md shadow-lg"
+                : "bg-[#5E483E]"
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="flex items-center justify-between h-18 sm:h-20">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 xl:px-8">
+                <div className="flex items-center justify-between h-18 sm:h-20 lg:gap-8">
                     {/* Logo + Name + CRM */}
                     <a
                         href="#inicio"
@@ -48,25 +48,25 @@ export default function Header() {
                         aria-label="Início"
                     >
                         <div>
-                            <span className="text-lg sm:text-xl font-extrabold text-text leading-tight block">
+                            <span className="text-xl sm:text-2xl font-extrabold text-white leading-tight block">
                                 {DOCTOR.name}
                             </span>
-                            <span className="text-xs sm:text-sm text-text-secondary leading-tight block">
-                                {DOCTOR.specialty} • {DOCTOR.crm}
+                            <span className="text-sm sm:text-base font-medium text-white/90 leading-tight block">
+                                {DOCTOR.specialty} | {DOCTOR.crm}
                             </span>
-                            <span className="hidden sm:block text-[11px] sm:text-xs text-text-muted leading-tight">
-                                {DOCTOR.rqeGeriatria} • {DOCTOR.rqePaliativos}
+                            <span className="hidden sm:block text-xs sm:text-sm text-white/70 leading-tight">
+                                {DOCTOR.rqeGeriatria} | {DOCTOR.rqePaliativos}
                             </span>
                         </div>
                     </a>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden lg:flex items-center gap-1" aria-label="Menu principal">
+                    <nav className="hidden lg:flex items-center gap-1 xl:gap-2 overflow-x-auto" aria-label="Menu principal">
                         {NAV_ITEMS.map((item) => (
                             <a
                                 key={item.href}
                                 href={item.href}
-                                className="px-3 py-2 text-base font-medium text-text-secondary hover:text-text transition-colors rounded-lg hover:bg-white/50"
+                                className="px-3 py-2 text-lg font-bold text-white/90 hover:text-white transition-colors rounded-lg hover:bg-white/20 whitespace-nowrap"
                             >
                                 {item.label}
                             </a>
@@ -75,7 +75,7 @@ export default function Header() {
                             href={CONTACT.instagram}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ml-1 p-2.5 text-text-secondary hover:text-pink-500 transition-colors rounded-lg hover:bg-white/50"
+                            className="ml-1 p-2.5 text-white/90 hover:text-pink-400 transition-colors rounded-lg hover:bg-white/20"
                             aria-label="Instagram"
                         >
                             <Instagram size={22} />
@@ -93,7 +93,7 @@ export default function Header() {
 
                     {/* Mobile Hamburger */}
                     <button
-                        className="lg:hidden p-2 text-text rounded-lg hover:bg-white/50 transition-colors"
+                        className="lg:hidden p-2 text-white rounded-lg hover:bg-white/20 transition-colors"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
                         aria-expanded={isOpen}

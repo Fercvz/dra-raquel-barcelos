@@ -26,12 +26,12 @@ export default function Hero() {
                         transition={{ duration: 0.7, ease: "easeOut" }}
                         className="text-center lg:text-left order-2 lg:order-1"
                     >
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text leading-tight tracking-tight">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text leading-[1.1] tracking-tight">
                             Cuidar de quem você ama com mais segurança, acolhimento e
                             qualidade de vida.
                         </h1>
 
-                        <p className="mt-5 text-base sm:text-lg text-text-secondary leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        <p className="mt-6 text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             Atendimento em geriatria e cuidados paliativos com escuta atenta, orientações claras e um plano de cuidado feito para você e seus familiares.
                         </p>
 
@@ -39,19 +39,19 @@ export default function Hero() {
 
 
                         {/* CTAs */}
-                        <div className="mt-8 flex flex-col sm:flex-row items-center gap-3 justify-center lg:justify-start">
+                        <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
                             <a
                                 href={getWhatsAppUrl()}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white font-bold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-whatsapp hover:bg-whatsapp-dark text-white text-lg font-bold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 whitespace-nowrap"
                             >
-                                <MessageCircle size={18} />
+                                <MessageCircle size={22} />
                                 Falar no WhatsApp
                             </a>
                             <a
                                 href="#atendimentos"
-                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#DFD0C4] hover:bg-[#D5C4B6] text-text font-semibold rounded-full border-2 border-[#C4AB9D] transition-all duration-200"
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#DFD0C4] hover:bg-[#D5C4B6] text-text text-lg font-bold rounded-full border-2 border-[#C4AB9D] transition-all duration-200 whitespace-nowrap"
                             >
                                 Conheça os atendimentos
                             </a>
@@ -65,7 +65,7 @@ export default function Hero() {
                         transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                         className="order-1 lg:order-2 flex justify-center"
                     >
-                        <div className="relative w-80 h-[360px] sm:w-[420px] sm:h-[500px] lg:w-[480px] lg:h-[560px]">
+                        <div className="relative w-80 h-[360px] sm:w-[420px] sm:h-[500px] lg:w-[540px] lg:h-[620px]">
                             {/* Decorative rings */}
                             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-[#EEDDD3]/40 to-rose/40 blur-sm" />
                             <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-[#F7E9E1] to-rose overflow-hidden shadow-lg">
@@ -94,7 +94,7 @@ export default function Hero() {
                         className="text-text-muted hover:text-text transition-colors animate-bounce"
                         aria-label="Rolar para próxima seção"
                     >
-                        <ChevronDown size={24} />
+                        <ChevronDown size={40} strokeWidth={1.5} />
                     </a>
                 </motion.div>
             </div>

@@ -49,9 +49,8 @@ export default function FirstVisit() {
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Como funciona a primeira consulta?
                     </h2>
-                    <p className="mt-4 text-lg text-text-secondary">
-                        O primeiro passo pode parecer difícil, mas é mais simples do que
-                        você imagina. Estamos aqui para acolher.
+                    <p className="mt-4 text-2xl text-text-secondary max-w-5xl mx-auto px-4">
+                        O primeiro passo pode parecer difícil, mas é mais simples do que você imagina. Estamos aqui para acolher.
                     </p>
                 </motion.div>
 

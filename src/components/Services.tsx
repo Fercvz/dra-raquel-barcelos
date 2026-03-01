@@ -8,6 +8,7 @@ import {
     Monitor,
     Home,
     MessageCircle,
+    Pill,
 } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/constants";
 
@@ -61,6 +62,16 @@ const SERVICES = [
         howHelps:
             "Vai além do paciente: observa a rotina, as condições de segurança e oferece orientação personalizada para a família e cuidadores.",
     },
+    {
+        icon: Pill,
+        title: "Gestão de Medicamentos",
+        description:
+            "Análise completa e integrada de todas as medicações prescritas por diferentes especialistas, sempre com foco na segurança e na necessidade real.",
+        forWhom:
+            "Para idosos e pacientes que tomam muitos remédios (polifarmácia) e precisam de uma avaliação médica global.",
+        howHelps:
+            "Evita interações medicamentosas indesejadas, reduz efeitos adversos e otimiza a rotina de tratamentos, garantindo que o paciente tome apenas o que faz sentido para sua saúde atual.",
+    },
 ];
 
 export default function Services() {
@@ -73,12 +84,12 @@ export default function Services() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-3xl mx-auto mb-12"
+                    className="text-center mx-auto mb-12"
                 >
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap mx-auto">
                         Conheça as formas de atendimento disponíveis
                     </h2>
-                    <p className="mt-4 text-x1 text-text-secondary">
+                    <p className="mt-4 text-2xl text-text-secondary max-w-5xl mx-auto px-4">
                         Cada pessoa é única e o cuidado também precisa ser.
                     </p>
                 </motion.div>
@@ -91,18 +102,16 @@ export default function Services() {
                     transition={{ duration: 0.5 }}
                     className="bg-white rounded-2xl p-6 sm:p-8 mb-10 border-2 border-border"
                 >
-                    <div className="flex flex-col sm:flex-row items-start gap-4">
-                        <div className="w-10 h-10 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] shrink-0">
+                    <div className="flex flex-col items-center">
+                        <div className="w-11 h-11 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] shrink-0 mb-4 mx-auto">
                             <HeartHandshake size={22} />
                         </div>
-                        <div>
-                            <h3 className="text-base font-semibold text-text mb-1">
-                                Apoio à família e cuidadores
-                            </h3>
-                            <p className="text-base text-text-secondary leading-relaxed">
-                                Em todos os atendimentos, a família é parte essencial do cuidado. Oferecemos escuta e suporte, pois acreditamos que quem cuida também merece ser cuidado.
-                            </p>
-                        </div>
+                        <h3 className="text-2xl font-semibold text-text mb-3 text-center">
+                            Apoio à família e cuidadores
+                        </h3>
+                        <p className="text-lg text-text-secondary leading-relaxed text-justify w-full">
+                            Em todos os atendimentos, a família é parte essencial do cuidado. Oferecemos escuta e suporte, pois acreditamos que quem cuida também merece ser cuidado.
+                        </p>
                     </div>
                 </motion.div>
 
@@ -117,24 +126,24 @@ export default function Services() {
                             transition={{ duration: 0.5, delay: i * 0.08 }}
                             className="bg-white rounded-2xl p-6 border-2 border-border hover:shadow-lg hover:border-[#C4AB9D] transition-all duration-300 flex flex-col group"
                         >
-                            <div className="w-11 h-11 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] mb-4 group-hover:bg-[#EEDDD3] transition-colors">
+                            <div className="w-11 h-11 rounded-xl bg-[#F7E9E1] flex items-center justify-center text-[#9A7D6D] mb-4 mx-auto group-hover:bg-[#EEDDD3] transition-colors">
                                 <service.icon size={22} />
                             </div>
 
-                            <h3 className="text-2xl font-semibold text-text mb-2">
+                            <h3 className="text-2xl font-semibold text-text mb-3 text-center">
                                 {service.title}
                             </h3>
 
-                            <p className="text-lg text-text-secondary leading-relaxed mb-3">
+                            <p className="text-lg text-text-secondary leading-relaxed mb-4 text-justify">
                                 {service.description}
                             </p>
 
-                            <div className="mt-auto pt-4 border-t border-border/40 space-y-2">
-                                <p className="text-base text-text-muted">
+                            <div className="mt-auto pt-5 border-t border-border/40 space-y-3">
+                                <p className="text-lg text-text-muted text-justify leading-relaxed">
                                     <strong className="text-text-secondary">Para quem:</strong>{" "}
                                     {service.forWhom}
                                 </p>
-                                <p className="text-sm text-text-muted">
+                                <p className="text-lg text-text-muted text-justify leading-relaxed">
                                     <strong className="text-text-secondary">
                                         Como pode ajudar:
                                     </strong>{" "}

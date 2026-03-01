@@ -19,7 +19,7 @@ export default function Office() {
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Onde estamos
                     </h2>
-                    <p className="mt-4 text-lg text-text-secondary">
+                    <p className="mt-4 text-2xl text-text-secondary max-w-5xl mx-auto px-4">
                         Consultório localizado em{" "}
                         <strong className="text-text">{OFFICE.city}-{OFFICE.state}</strong>,
                         em ambiente acolhedor e acessível.

@@ -77,31 +77,29 @@ export default function VideoCarousel() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6 }}
-                        className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-10"
+                        className="flex flex-col items-center mb-12 text-center"
                     >
-                        <div>
-                            <h2 className="text-2xl sm:text-3xl font-bold text-text leading-tight">
-                                Conteúdos para você e sua família
-                            </h2>
-                        </div>
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap mb-6">
+                            Conteúdos para você e sua família
+                        </h2>
 
                         {/* Desktop nav arrows */}
-                        <div className="hidden sm:flex items-center gap-2 mt-4 sm:mt-0">
+                        <div className="hidden sm:flex items-center gap-4">
                             <button
                                 onClick={scrollPrev}
                                 disabled={!canPrev}
-                                className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-text-secondary hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="w-14 h-14 rounded-full border border-border flex items-center justify-center text-text-secondary hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
                                 aria-label="Vídeo anterior"
                             >
-                                <ChevronLeft size={20} />
+                                <ChevronLeft size={28} />
                             </button>
                             <button
                                 onClick={scrollNext}
                                 disabled={!canNext}
-                                className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-text-secondary hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="w-14 h-14 rounded-full border border-border flex items-center justify-center text-text-secondary hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
                                 aria-label="Próximo vídeo"
                             >
-                                <ChevronRight size={20} />
+                                <ChevronRight size={28} />
                             </button>
                         </div>
                     </motion.div>
@@ -112,7 +110,7 @@ export default function VideoCarousel() {
                             {videos.map((video) => (
                                 <div
                                     key={video.id}
-                                    className="flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_30%] min-w-0"
+                                    className="flex-[0_0_90%] sm:flex-[0_0_55%] lg:flex-[0_0_40%] min-w-0"
                                 >
                                     <div
                                         className="bg-white rounded-2xl overflow-hidden border border-border/40 hover:shadow-lg transition-all duration-300 group cursor-pointer"
@@ -134,26 +132,26 @@ export default function VideoCarousel() {
                                             )}
                                             {/* Play overlay */}
                                             <div className="absolute inset-0 flex items-center justify-center bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity">
-                                                <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center text-blue-600 shadow-lg">
-                                                    <Play size={20} fill="currentColor" />
+                                                <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center text-blue-600 shadow-lg">
+                                                    <Play size={24} fill="currentColor" />
                                                 </div>
                                             </div>
                                             {/* Category badge */}
-                                            <span className="absolute top-3 left-3 text-[10px] font-medium text-blue-700 bg-white/90 px-2.5 py-1 rounded-full">
+                                            <span className="absolute top-4 left-4 text-xs font-medium text-blue-700 bg-white/90 px-3 py-1.5 rounded-full">
                                                 {video.category}
                                             </span>
                                         </div>
 
                                         {/* Content */}
-                                        <div className="p-4">
-                                            <h3 className="text-sm font-semibold text-text mb-1 line-clamp-2">
+                                        <div className="p-6">
+                                            <h3 className="text-xl font-bold text-text mb-2 line-clamp-2">
                                                 {video.title}
                                             </h3>
-                                            <p className="text-xs text-text-secondary leading-relaxed">
+                                            <p className="text-base text-text-secondary leading-relaxed">
                                                 {video.description}
                                             </p>
-                                            <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 group-hover:text-blue-700 transition-colors">
-                                                <Play size={14} />
+                                            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-blue-600 group-hover:text-blue-700 transition-colors">
+                                                <Play size={18} />
                                                 Assistir
                                             </span>
                                         </div>

@@ -62,9 +62,8 @@ export default function WhenToSeekHelp() {
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
                         Quando procurar ajuda?
                     </h2>
-                    <p className="mt-4 text-lg text-text-secondary">
-                        Alguns sinais podem ser sutis, mas merecem atenção. Reconhecê-los é
-                        o primeiro passo para cuidar melhor de quem você ama.
+                    <p className="mt-4 text-2xl text-text-secondary max-w-5xl mx-auto px-4">
+                        Alguns sinais podem ser sutis, mas merecem atenção. Reconhecê-los é o primeiro passo para cuidar melhor de quem você ama.
                     </p>
                 </motion.div>
 
@@ -93,7 +92,7 @@ export default function WhenToSeekHelp() {
                             </h3>
 
                             {/* Body */}
-                            <p className="text-lg text-text-secondary leading-relaxed mb-3">
+                            <p className="text-lg text-text-secondary leading-relaxed mb-3 text-justify">
                                 {sign.body}
                             </p>
                         </motion.div>
@@ -108,7 +107,7 @@ export default function WhenToSeekHelp() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="text-center mt-12"
                 >
-                    <p className="text-base sm:text-lg text-text-secondary max-w-xl mx-auto mb-6 leading-relaxed">
+                    <p className="text-xl sm:text-2xl text-text-secondary max-w-3xl mx-auto mb-8 leading-relaxed">
                         Se você percebeu um ou mais desses sinais em alguém da sua família,
                         uma avaliação pode trazer mais clareza e segurança para os próximos
                         passos.
@@ -117,9 +116,9 @@ export default function WhenToSeekHelp() {
                         href={getWhatsAppUrl()}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-7 py-3.5 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                        className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-whatsapp hover:bg-whatsapp-dark text-white text-lg font-bold rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                     >
-                        <MessageCircle size={18} />
+                        <MessageCircle size={22} />
                         Falar no WhatsApp
                     </a>
                 </motion.div>

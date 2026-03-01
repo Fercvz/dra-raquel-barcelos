@@ -28,24 +28,23 @@ const CARE_CARDS = [
 
 export default function HealthyCare() {
     return (
-        <section className="py-16 sm:py-24 bg-cream">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.6 }}
-                    className="text-center mx-auto mb-12"
-                >
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
-                        Cuidar da saúde é um ato de amor por você e por sua família
-                    </h2>
-                    <p className="mt-4 text-x1 text-text-secondary">
-                        O acompanhamento preventivo é um dos maiores cuidados que alguém
-                        pode ter. Entenda por que ele faz tanta diferença.
-                    </p>
-                </motion.div>
+        <section className="py-16 sm:py-24 bg-cream overflow-hidden">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6 }}
+                className="text-center w-full px-4 sm:px-6 mb-12 mx-auto"
+            >
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text leading-tight lg:whitespace-nowrap">
+                    Cuidar da saúde é um ato de amor por você e por sua família
+                </h2>
+                <p className="mt-4 text-2xl text-text-secondary max-w-5xl mx-auto px-4">
+                    O acompanhamento preventivo é um dos maiores cuidados que alguém pode ter. Entenda por que ele faz tanta diferença.
+                </p>
+            </motion.div>
 
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {CARE_CARDS.map((card, i) => (
                         <motion.div
