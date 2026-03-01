@@ -73,7 +73,7 @@ export default function About() {
                             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-blue-200/40 to-rose/40 blur-sm" />
                             <div className="relative w-full h-full rounded-[1.75rem] bg-gradient-to-br from-blue-100 to-rose overflow-hidden shadow-lg">
                                 <Image
-                                    src="/dra-raquel.jpg"
+                                    src="/dra-raquel-sobre.jpg"
                                     alt="Dra. Raquel Barcelos — Geriatra e Paliativista"
                                     fill
                                     className="object-cover"
